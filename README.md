@@ -1,5 +1,5 @@
 # Random password Generator
-[![PyPI version](https://img.shields.io/badge/PYPI-V%200.0.3-blue.svg)](https://pypi.org/project/easy-password-generator)
+[![PyPI version](https://img.shields.io/badge/PYPI-V%200.0.4-blue.svg)](https://pypi.org/project/easy-password-generator)
 [![Build Status](https://travis-ci.com/soniaghongadi/password-generator.svg?branch=master)](https://travis-ci.com/soniaghongadi/password-generator.svg)
 
 ##### A strong but super simple to use library to generate passwords 

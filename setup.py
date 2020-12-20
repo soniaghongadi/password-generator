@@ -6,14 +6,14 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="easy-password-generator",
-    version="0.0.3",
+    version="0.0.5",
     author="Sonia Ghongadi",
     author_email="author@example.com",
     description="A powerful but simple to use strong password generation library",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/soniaghongadi/password-generator",
-    packages=setuptools.find_packages(),
+    py_modules=['easy_password_generator'],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
