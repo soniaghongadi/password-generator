@@ -13,4 +13,4 @@ matrix:
 install:
   - pip install -r requirements.txt
 script:
-  - python password_generator/test.py
+  - python test.py
