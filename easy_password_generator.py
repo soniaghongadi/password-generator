@@ -67,35 +67,38 @@ class PassGen:
 
         if collectiveMinLength > self.minlen:
             self.minlen = collectiveMinLength
-
-        final_pass = [
+        # add min added lowercase character 
+        generated_password = [
             choice(list(set(self.lower_chars)))
             for i in range(self.minlc)
         ]
-        final_pass += [
+        # add min added upper character 
+        generated_password += [
             choice(list(set(self.upper_chars)))
             for i in range(self.minuc)
         ]
-        final_pass += [
+        # add min added number character 
+        generated_password += [
             choice(list(set(self.numbers_list)))
             for i in range(self.minnum)
         ]
-        final_pass += [
+        # add min added special character 
+        generated_password += [
             choice(list(set(self._schars)))
             for i in range(self.minsc)
         ]
 
-        currentpasslen = len(final_pass)
+        pass_len_so_far = len(generated_password)
         all_chars = list(
             set(self._allchars)
         )
 
-        if len(final_pass) < self.maxlen:
+        if len(generated_password) < self.maxlen:
             randlen = randint(self.minlen, self.maxlen)
             result = []
-            for i in range(randlen - currentpasslen):
+            for i in range(randlen - pass_len_so_far):
                 result.append(choice(all_chars))
-            final_pass += result
+            generated_password += result
 
-        shuffle(final_pass)
-        return "".join(final_pass)
+        shuffle(generated_password)
+        return "".join(generated_password)
