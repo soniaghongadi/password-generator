@@ -6,7 +6,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="easy-password-generator",
-    version="0.0.2",
+    version="0.0.3",
     author="Sonia Ghongadi",
     author_email="author@example.com",
     description="A powerful but simple to use strong password generation library",

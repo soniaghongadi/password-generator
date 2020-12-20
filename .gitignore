@@ -1,3 +1,4 @@
 dist
 build
 easy_password_generator.*
+.vscode
