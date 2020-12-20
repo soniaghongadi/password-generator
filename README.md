@@ -37,20 +37,20 @@
 
 ## Examples:
 ``` python
-  pwo = PasswordGenerator()
+  pwo = PassGen()
   pwo.generate()
 ```
 
 ### Generate a custom password
 ``` python
-  pwo = PasswordGenerator(minlen = 30, maxlen=20, min)
+  pwo = PassGen(minlen = 30, maxlen=20, min)
 
   pwo.generate()
 ```
 
 ### Generate Non Duplicate Password
 ``` python
-  pwo = PasswordGenerator()
+  pwo = PassGen()
 
   # length of required password
   pwo.next(20)
