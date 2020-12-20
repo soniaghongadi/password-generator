@@ -1,4 +1,5 @@
 dist
 build
 easy_password_generator.*
+!easy_password_generator.py
 .vscode
