@@ -11,6 +11,6 @@ matrix:
       dist: xenial
       sudo: true
 install:
-  - pip install -r requirements.txt
+  - pip install easy_password_generator==0.0.5
 script:
   - python test.py
