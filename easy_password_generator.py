@@ -92,8 +92,10 @@ class PassGen:
 
         if len(final_pass) < self.maxlen:
             randlen = randint(self.minlen, self.maxlen)
-            final_pass += [choice(all_chars)
-                           for i in range(randlen - currentpasslen)]
+            result = []
+            for i in range(randlen - currentpasslen):
+                result.append(choice(all_chars))
+            final_pass += result
 
         shuffle(final_pass)
         return "".join(final_pass)
