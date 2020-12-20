@@ -11,6 +11,10 @@ class TestRPG(unittest.TestCase):
         pg = PassGen()
         self.assertTrue(6 <= len(pg.generate()) <= 16)
 
+    def test_generate_next(self):
+        pg = PassGen()
+        self.assertTrue(6 <= len(pg.next(10)) <= 16)
+
     def test_generate_with_length(self):
         pg = PassGen()
         pg.minlen = 10

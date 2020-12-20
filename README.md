@@ -1,5 +1,5 @@
 # Random password Generator
-[![PyPI version](https://img.shields.io/badge/PYPI-V%200.0.4-blue.svg)](https://pypi.org/project/easy-password-generator)
+[![PyPI version](https://img.shields.io/badge/PYPI-V%200.0.7-blue.svg)](https://pypi.org/project/easy-password-generator)
 [![Build Status](https://travis-ci.com/soniaghongadi/password-generator.svg?branch=master)](https://travis-ci.com/soniaghongadi/password-generator.svg)
 
 ##### A strong but super simple to use library to generate passwords 
@@ -43,7 +43,7 @@
 
 ### Generate a custom password
 ``` python
-  pwo = PassGen(minlen = 30, maxlen=20, min)
+  pwo = PassGen(minlen = 10, maxlen=15)
 
   pwo.generate()
 ```
@@ -55,9 +55,11 @@
   # length of required password
   pwo.next(20)
 ```
+## Update V0.0.7
+Introduces next function
 
-## Update V1.0.0
-From version 1.0.0, Initial library launch
+## Update V0.0.6
+From version 0.0.6, Initial library launch
 
 ## Contributions
 Contributions can be made with PR or contact sghongadi@gmail.com 

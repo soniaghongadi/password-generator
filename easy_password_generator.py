@@ -45,6 +45,14 @@ class PassGen:
             + self._schars
         )
 
+    def next(self, num):
+        if(num<1):
+            return self.generate()
+        shuffle = ""
+        for i in range(num):
+            shuffle = self.generate()
+        return shuffle
+
     def generate(self):
         if (
             self.minlen < 0
